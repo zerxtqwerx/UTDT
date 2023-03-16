@@ -273,6 +273,7 @@ GameObject:
   - component: {fileID: 187420216}
   - component: {fileID: 187420215}
   - component: {fileID: 187420218}
+  - component: {fileID: 187420219}
   m_Layer: 5
   m_Name: Button Jump
   m_TagString: Untagged
@@ -400,6 +401,19 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &187420219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187420213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Keyboard>/space
 --- !u!1 &221803712
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,6 +505,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MovementRange: 50
   m_ControlPath: <Gamepad>/leftStick
+--- !u!1 &593600139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191674285460279523, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+  m_PrefabInstance: {fileID: 1191674285204542016}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &629200826
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,7 +748,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 657567218}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1075543298}
+        m_TargetAssemblyTypeName: SpawnModel, Assembly-CSharp
+        m_MethodName: Spawn_Model
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &657567218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1100,7 +1131,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 802951197}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1075543298}
+        m_TargetAssemblyTypeName: SpawnModel, Assembly-CSharp
+        m_MethodName: Spawn_Model
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &802951197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1144,7 +1187,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1191674285460279530, guid: f36e08eb1351ee846b562f8695007739, type: 3}
   m_PrefabInstance: {fileID: 1191674285204542016}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 593600139}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7303c9e79e0e9044c8a52f4a8152b69a, type: 3}
@@ -1342,6 +1385,7 @@ GameObject:
   - component: {fileID: 1075543294}
   - component: {fileID: 1075543293}
   - component: {fileID: 1075543297}
+  - component: {fileID: 1075543298}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1462,6 +1506,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b50410ff45ab347a595c3ad74646b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1075543298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075543291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f433635d117de8b409baa5f1b8a92a09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  model: {fileID: 8928840271867231551, guid: 9fd47eec640df1c439a815b42d26e5cf, type: 3}
+  character: {fileID: 593600139}
 --- !u!1 &1201186159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,7 +1758,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1267140725}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1075543298}
+        m_TargetAssemblyTypeName: SpawnModel, Assembly-CSharp
+        m_MethodName: Spawn_Model
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1267140725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,7 +2194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1446479871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1075543298}
+        m_TargetAssemblyTypeName: SpawnModel, Assembly-CSharp
+        m_MethodName: Spawn_Model
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1446479871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,6 +2512,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1191674284591205067, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191674284591205067, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191674284591205067, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191674284591205067, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191674284591205067, guid: f36e08eb1351ee846b562f8695007739, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 1191674285460279523, guid: f36e08eb1351ee846b562f8695007739, type: 3}
       propertyPath: m_Name
       value: Character
