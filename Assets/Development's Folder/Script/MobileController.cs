@@ -70,7 +70,7 @@ public class MobileController : MonoBehaviour
     private void MyInput()
     {
         horizontalInput = joystick.Horizontal;
-        verticalInput = -joystick.Vertical;
+        verticalInput = joystick.Vertical;
     }
 
 

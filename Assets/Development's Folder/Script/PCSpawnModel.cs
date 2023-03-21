@@ -14,22 +14,22 @@ public class PCSpawnModel : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Spawn_Model(model1);
         }
 
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Spawn_Model(model2);
         }
 
-        if (Input.GetKey(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Spawn_Model(model3);
         }
 
-        if (Input.GetKey(KeyCode.Alpha4))
+        if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             Spawn_Model(model4);
         }
