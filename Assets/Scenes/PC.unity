@@ -317,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -401,6 +402,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!4 &894202570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8387400183500698624, guid: 1479cf0f85ffa374ca631564e890e611, type: 3}
@@ -639,10 +660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b99a112ea7a6c64fb0a1fc7dec99c02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model1: {fileID: 6407969851719174529, guid: 8b29032355ee07441ad5e2a381219b75, type: 3}
-  model2: {fileID: 2571544640674506970, guid: aef60b0819e68344ab5d2dcf1cf42fbc, type: 3}
-  model3: {fileID: 2053209616483390408, guid: 920c16269ae70dd43bc7a32cfafe2dbc, type: 3}
-  model4: {fileID: 2552640942851991095, guid: 1ab29cd82a214af4fb166f97ed644690, type: 3}
+  model1: {fileID: 4362483459972536779, guid: aef60b0819e68344ab5d2dcf1cf42fbc, type: 3}
+  model2: {fileID: 7309845030620951485, guid: 1ab29cd82a214af4fb166f97ed644690, type: 3}
+  model3: {fileID: 8382355998979276693, guid: 8b29032355ee07441ad5e2a381219b75, type: 3}
+  model4: {fileID: 6764822282477983144, guid: 920c16269ae70dd43bc7a32cfafe2dbc, type: 3}
   character: {fileID: 247954088}
 --- !u!4 &1193531994
 Transform:
