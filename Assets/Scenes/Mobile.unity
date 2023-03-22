@@ -263,7 +263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 320071220}
   - component: {fileID: 320071219}
-  - component: {fileID: 320071221}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -348,26 +347,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &320071221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320071218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 1
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &420204865
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,7 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f433635d117de8b409baa5f1b8a92a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 6764822282477983144, guid: 920c16269ae70dd43bc7a32cfafe2dbc, type: 3}
+  model: {fileID: 2552640942851991095, guid: 1ab29cd82a214af4fb166f97ed644690, type: 3}
   character: {fileID: 803804051}
 --- !u!4 &420204867
 Transform:
@@ -443,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f433635d117de8b409baa5f1b8a92a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 7309845030620951485, guid: 1ab29cd82a214af4fb166f97ed644690, type: 3}
+  model: {fileID: 2571544640674506970, guid: aef60b0819e68344ab5d2dcf1cf42fbc, type: 3}
   character: {fileID: 803804051}
 --- !u!4 &438079082
 Transform:
@@ -892,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f433635d117de8b409baa5f1b8a92a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 8382355998979276693, guid: 8b29032355ee07441ad5e2a381219b75, type: 3}
+  model: {fileID: 2053209616483390408, guid: 920c16269ae70dd43bc7a32cfafe2dbc, type: 3}
   character: {fileID: 803804051}
 --- !u!4 &1002940619
 Transform:
@@ -1493,10 +1472,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8414930551700892399, guid: 546e073a97ae1de4880a64fe917469e3, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2dbd8b613fa4ae94581e08e80a4162f7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546e073a97ae1de4880a64fe917469e3, type: 3}
 --- !u!1 &2100101405
@@ -1528,7 +1503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f433635d117de8b409baa5f1b8a92a09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  model: {fileID: 4362483459972536779, guid: aef60b0819e68344ab5d2dcf1cf42fbc, type: 3}
+  model: {fileID: 6407969851719174529, guid: 8b29032355ee07441ad5e2a381219b75, type: 3}
   character: {fileID: 803804051}
 --- !u!4 &2100101407
 Transform:
