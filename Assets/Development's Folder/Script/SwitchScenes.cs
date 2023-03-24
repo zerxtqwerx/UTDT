@@ -7,14 +7,21 @@ public class SwitchScenes : MonoBehaviour
 {
     public void ChangeScene()
     {
-        if(SceneManager.GetActiveScene() == SceneManager.GetSceneByName("PC"))
+        if (SceneManager.GetActiveScene().name == "PC")
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("Mobile");
         }
-
-        else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Mobile"))
+        else if (SceneManager.GetActiveScene().name == "Mobile")
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("PC");
+        }
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Q))
+        {
+            ChangeScene();
         }
     }
 }
