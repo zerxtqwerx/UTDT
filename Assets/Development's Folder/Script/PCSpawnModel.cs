@@ -4,34 +4,19 @@ using UnityEngine;
 
 public class PCSpawnModel : MonoBehaviour
 {
-    public GameObject model1;
-    public GameObject model2;
-    public GameObject model3;
-    public GameObject model4;
+    public GameObject model;
 
     public GameObject character;
+
+    public KeyCode spawnKey;
+
     private object instRes;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(spawnKey))
         {
-            Spawn_Model(model1);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            Spawn_Model(model2);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            Spawn_Model(model3);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            Spawn_Model(model4);
+            Spawn_Model(model);
         }
     }
 
