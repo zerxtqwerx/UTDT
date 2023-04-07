@@ -14,7 +14,7 @@ public class SpawnModel : MonoBehaviour
 
     public void Spawn_Model()
     {
-        instRes = Instantiate(model, character.transform.position + Vector3.forward, Quaternion.identity);
+        instRes = Instantiate(model, character.transform.position + character.transform.forward, Quaternion.identity);
     }
 
     public void GiveData()

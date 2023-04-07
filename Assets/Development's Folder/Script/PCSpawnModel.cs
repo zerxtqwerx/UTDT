@@ -6,7 +6,7 @@ public class PCSpawnModel : MonoBehaviour
 {
     public GameObject model;
 
-    public GameObject character;
+    public GameObject characterOrientation;
 
     public KeyCode spawnKey;
 
@@ -22,6 +22,6 @@ public class PCSpawnModel : MonoBehaviour
 
     public void Spawn_Model(GameObject model)
     {
-        instRes = Instantiate(model, character.transform.position + Vector3.forward, Quaternion.identity);
+        instRes = Instantiate(model, characterOrientation.transform.position + characterOrientation.transform.forward, characterOrientation.transform.rotation);
     }
 }

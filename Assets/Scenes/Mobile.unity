@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 8382355998979276693, guid: 8b29032355ee07441ad5e2a381219b75, type: 3}
-  character: {fileID: 803804051}
+  character: {fileID: 1309043602}
   points: 178
   edges: 1
   polygons: 192
@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 7309845030620951485, guid: 1ab29cd82a214af4fb166f97ed644690, type: 3}
-  character: {fileID: 803804051}
+  character: {fileID: 1309043602}
   points: 114
   edges: 1
   polygons: 128
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 6764822282477983144, guid: 920c16269ae70dd43bc7a32cfafe2dbc, type: 3}
-  character: {fileID: 803804051}
+  character: {fileID: 1309043602}
   points: 82
   edges: 1
   polygons: 96
@@ -1336,6 +1336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d3ffad12c229d43b5c9063350a1755, type: 3}
+--- !u!1 &1309043602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8387400183189683877, guid: 1479cf0f85ffa374ca631564e890e611, type: 3}
+  m_PrefabInstance: {fileID: 7408058}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1351568261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1841,7 +1846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   model: {fileID: 4362483459972536779, guid: aef60b0819e68344ab5d2dcf1cf42fbc, type: 3}
-  character: {fileID: 803804051}
+  character: {fileID: 1309043602}
   points: 8
   edges: 1
   polygons: 6
