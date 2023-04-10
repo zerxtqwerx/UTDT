@@ -17,7 +17,6 @@ public class CharacterController_Movement : MonoBehaviour
 
     public float jumpForce;
     public float jumpCooldown;
-    public float airMultiplier;
     bool readyToJump;
 
     [Header("Keybinds")]
@@ -27,13 +26,11 @@ public class CharacterController_Movement : MonoBehaviour
     float horizontalInput;
     float verticalInput;
     Vector3 moveDirection;
+    float directionY;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-
-
-        //rb.freezeRotation = true;
 
         readyToJump = true;
     }
@@ -47,23 +44,11 @@ public class CharacterController_Movement : MonoBehaviour
         }
 
         MyInput();
-        //SpeedControl();
 
-        Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        characterController.Move(move * Time.deltaTime * playerSpeed);
-
-        if(move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
-
-        if(Input.GetButtonDown("Jump") && groundedPlayer)
-        {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
-        }
-
+        
         playerVelocity.y += gravityValue * Time.deltaTime;
         characterController.Move(playerVelocity * Time.deltaTime);
+
     }
 
     private void FixedUpdate()
@@ -76,49 +61,31 @@ public class CharacterController_Movement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        // when to jump
-        if (Input.GetKey(jumpKey) && readyToJump && groundedPlayer)
+        if ((Input.GetKey(jumpKey) && readyToJump && groundedPlayer) && transform.position.y != jumpHeight)
         {
             readyToJump = false;
 
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
+
         }
     }
 
-    /*private void SpeedControl()
-    {
-        Vector3 flatVel = new Vector3(characterController.velocity.x, 0f, characterController.velocity.z);
-
-        // limit velocity if needed
-        if (flatVel.magnitude > moveSpeed)
-        {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            characterController.velocity = new Vector3(limitedVel.x, characterController.velocity.y, limitedVel.z);
-        }
-    }*/
-
     private void MovePlayer()
     {
-        // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        // on ground
-        if (groundedPlayer)
-            characterController.Move(moveDirection.normalized * playerSpeed);
-
-        // in air
-        else if (!groundedPlayer)
-            characterController.Move(moveDirection.normalized * playerSpeed * airMultiplier);
+        characterController.Move(moveDirection.normalized * playerSpeed);
     }
 
     private void Jump()
     {
-        // reset y velocity
-        playerVelocity = new Vector3(characterController.velocity.x, 0f, characterController.velocity.z);
+        playerVelocity.y -= gravityValue * Time.deltaTime;
 
-        characterController.Move(transform.up * jumpForce);
+        characterController.Move(transform.up.normalized * jumpForce);
+
+        
     }
     private void ResetJump()
     {

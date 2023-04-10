@@ -676,11 +676,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   orientation: {fileID: 219651710}
-  playerSpeed: 0.2
+  playerSpeed: 0.18
   jumpHeight: 1
-  jumpForce: 2
+  jumpForce: 0.5
   jumpCooldown: 0.7
-  airMultiplier: 0.4
   jumpKey: 32
 --- !u!143 &1856629032
 CharacterController:
