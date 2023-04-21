@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnModel : MonoBehaviour
 {
     public GameObject model;
-    public GameObject character;
+    public GameObject characterOrientation;
     private object instRes;
 
     public float points, edges, polygons;
@@ -14,7 +14,7 @@ public class SpawnModel : MonoBehaviour
 
     public void Spawn_Model()
     {
-        instRes = Instantiate(model, character.transform.position + character.transform.forward, Quaternion.identity);
+        instRes = Instantiate(model, characterOrientation.transform.position + characterOrientation.transform.forward, Quaternion.identity);
     }
 
     public void GiveData()

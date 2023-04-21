@@ -12,6 +12,10 @@ public class PCSpawnModel : MonoBehaviour
 
     private object instRes;
 
+    public float points, edges, polygons;
+
+    public Count count;
+
     private void Update()
     {
         if (Input.GetKeyDown(spawnKey))
@@ -23,5 +27,14 @@ public class PCSpawnModel : MonoBehaviour
     public void Spawn_Model(GameObject model)
     {
         instRes = Instantiate(model, characterOrientation.transform.position + characterOrientation.transform.forward, characterOrientation.transform.rotation);
+        GiveData();
+    }
+
+    public void GiveData()
+    {
+        count.GlobalPoints += points;
+        count.GlobalEdges += edges;
+        count.GlobalPolygons += polygons;
+        count.GlobalAmount += 1;
     }
 }
